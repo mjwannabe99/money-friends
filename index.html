@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Friends</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- 시작 화면 -->
+    <section id="start-screen">
+
+        <div class="logo">
+            💰
+        </div>
+
+        <h1>Money Friends</h1>
+
+        <p class="subtitle">
+            돈을 배우는 재미있는 게임
+        </p>
+
+        <button id="startBtn" class="main-btn">
+            게임 시작
+        </button>
+
+    </section>
+
+
+
+    <!-- 게임 화면 -->
+
+    <section id="game-screen" class="hidden">
+
+        <div class="top-bar">
+
+            <div id="progress">
+                문제 1 / 40
+            </div>
+
+            <div id="score">
+                ⭐ 0
+            </div>
+
+        </div>
+
+        <div class="progress-wrap">
+
+            <div class="progress-bar" id="progressBar"></div>
+
+        </div>
+
+        <div class="card">
+
+            <h2 id="question">
+
+            </h2>
+
+            <div id="choices">
+
+            </div>
+
+            <div id="result">
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- 종료 -->
+
+    <section id="finish-screen" class="hidden">
+
+        <div class="finish-icon">
+            🏆
+        </div>
+
+        <h2>
+
+            게임 완료!
+
+        </h2>
+
+        <h3 id="finalScore">
+
+        </h3>
+
+        <button id="restartBtn" class="main-btn">
+
+            다시하기
+
+        </button>
+
+    </section>
+
+</div>
+
+<script src="questions.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
